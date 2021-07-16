@@ -46,7 +46,7 @@ for x in lista:
         maradekos+=1
 
 #3. feladat
-print("3. feladat:Kifejezések maradékos osztással: {}".format(maradekos))
+print(f"3. feladat:Kifejezések maradékos osztással: {maradekos}")
 
 
 #4. feladat
@@ -77,7 +77,7 @@ for x in kivalogatas:
     for y in lista:
         if y.muvelet ==x:
             szam+=1
-    print("\t{} -> {} db".format(x,szam))
+    print(f'\t{x} -> {szam} db')
 
 #7. feladat
 while True:
@@ -85,15 +85,15 @@ while True:
     if(kifejezes=="vége"): break
     else:
         szam = Szamolas(kifejezes)
-        print("\t{} = {}".format(kifejezes, szam))
+        print(f"\t{kifejezes} = {szam}")
 
 #8. feladat    
 print("8. feladat: eredmenyek.txt")
 kiiras = open("eredmenyek.txt","w",)
 for x in lista:
-    kifejezes =str(x.szam1)+" "+str(x.muvelet)+" "+str(x.szam2)
+    kifejezes =f"{x.szam1} {x.muvelet} {x.szam2}"
     szam = Szamolas(kifejezes)
-    kiiras.write("{} = {}\n".format(kifejezes, szam))
+    kiiras.write(f"{kifejezes} = {szam}\n")
 kiiras.close()
     
 
